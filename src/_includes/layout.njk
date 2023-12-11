@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>{{ title }}</title>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <img alt="Logo" class="logo" src="images/logo.png"/>
+    <h1 class="title">{{ title | safe }}</h1>
+    <h2 class="intro">{{ intro | safe }}</h2>
+    <ul class="contact">
+      {% for details in contact_details %}
+      <li><a href="{{ details }}">{{ details.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</header>
+<main>
+  <div class="container">
+    {{ content | safe }}
+  </div>
+</main>
+<footer>&copy; 2023 Matematyka Się Liczy</footer>
+</body>
+</html>
