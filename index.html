@@ -5,26 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matematyka Się Liczy — Małgorzata Świątek, Korepetycje z Matematyki</title>
   <style>
+    :root {
+      --accent-color: #387a6e;
+      --background-color: #f5f5f5;
+      --text-color: #333333;
+      --white-text-color: #ffffff;
+      --silver-text-color: #C0C0C0;
+      --font-family: "Reckless Neue", Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+      --default-font-size: 19px;
+      --section-title-font-size: 25px;
+      --intro-font-size: 16px;
+      --max-container-width: 800px;
+    }
+
     body {
-      background-color: #f5f5f5;
-      font-family: "Reckless Neue", Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+      font-family: var(--font-family);
+      color: var(--text-color);
+      font-size: var(--default-font-size);
+      background-color: var(--background-color);
       margin: 0;
       padding: 0;
-      font-size: 1.2rem;
     }
 
-    header {
-      background-color: #387a6e;
-      color: #ffffff;
+    header, footer {
+      background-color: var(--accent-color);
+      color: var(--white-text-color);
       text-align: center;
       padding: 20px 0;
-      overflow: hidden;
     }
 
-    .header-container {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
+    .header-container, .container {
+      max-width: var(--max-container-width);
+      margin: 0 auto;
+      padding: 32px;
     }
 
     .logo {
@@ -40,70 +53,45 @@
     }
 
     .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem;
       text-align: left;
-      background-color: #fff;
+      background-color: var(--white-text-color);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     .intro {
       text-transform: uppercase;
       font-weight: lighter;
-      font-size: 16px;
+      font-size: var(--intro-font-size);
       letter-spacing: 2px;
-      margin-top: 1rem;
-      color: silver;
+      margin-top: 16px;
+      color: var(--white-text-color);
     }
 
     .section {
-      margin-bottom: 2rem;
+      margin-bottom: 32px;
     }
 
-    .section h2 {
-      font-size: 25px;
-      color: #1E2A38;
+    .section h3 {
+      font-size: var(--section-title-font-size);
       font-weight: 700;
     }
 
-    .section p {
-      color: #333;
-    }
-
-    .reviews {
-      color: #333;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
     .review {
-      border-left: 3px solid #387a6e;
+      border-left: 3px solid var(--accent-color);
       padding-left: 15px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .review p {
       font-style: italic;
-      font-size: 1.2rem;
+      font-size: var(--default-font-size);
       color: #555;
-    }
-
-    .contact-info h2 {
-      font-size: 25px;
-      color: #1E2A38;
-      font-weight: 700;
-    }
-
-    .contact-info p {
-      font-size: 1.2rem;
-      color: #333;
     }
 
     .table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 2rem;
+      margin-top: 32px;
     }
 
     .table th, .table td {
@@ -113,15 +101,8 @@
     }
 
     .table th {
-      background-color: #387a6e;
-      color: #ffffff;
-    }
-
-    footer {
-      background-color: #387a6e;
-      color: #ffffff;
-      text-align: center;
-      padding: 1rem 0;
+      background-color: var(--accent-color);
+      color: var(--white-text-color);
     }
 
     .contact {
@@ -136,8 +117,13 @@
     }
 
     .contact a {
-      color: silver;
-      font-size: 16px;
+      color: var(--silver-text-color);
+      text-decoration: none;
+      font-size: var(--intro-font-size);
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -160,7 +146,7 @@
   </div>
 
   <div class="section">
-    <h2>Doświadczenie</h2>
+    <h3>Doświadczenie</h3>
     <p>Korepetycji udzielam od 14 lat, z czego 3 z nich pracowałam w szkole.
       Znam codzienne zmagania uczniów, problematyczne zagadnienia z lekcji oraz
       wymagania nauczycieli.</p>
@@ -169,14 +155,14 @@
   </div>
 
   <div class="section">
-    <h2>Dla kogo prowadzę zajęcia?</h2>
+    <h3>Dla kogo prowadzę zajęcia?</h3>
     <p>Prowadzę zajęcia dla młodzieży ze szkół podstawowych (tylko klasa 6, 7 i
       8) i ponadpodstawowych. Współpracuję też ze studentami, po wcześniejszym
       ustaleniu zakresu materiału.</p>
   </div>
 
   <div class="section">
-    <h2>Co możemy razem osiągnąć?</h2>
+    <h3>Co możemy razem osiągnąć?</h3>
     <p>Nadrobimy zaległości</p>
     <p>Doszlifujemy Twoje umiejętności</p>
     <p>Poszerzymy matematyczne horyzonty</p>
@@ -188,7 +174,7 @@
   </div>
 
   <div class="section">
-    <h2>Co jeszcze?</h2>
+    <h3>Co jeszcze?</h3>
     <p>Poczujesz się pewniej na lekcjach. Podejście do tablicy przestanie być
       stresujące. W zamian za to – zacznie przynosić satysfakcję.</p>
     <p>Nauczysz się, jak uczyć się matematyki, aby osiągać efekty.</p>
@@ -205,7 +191,7 @@
   </div>
 
   <div class="section">
-    <h2>Czego możesz spodziewać się na spotkaniach?</h2>
+    <h3>Czego możesz spodziewać się na spotkaniach?</h3>
     <p>Zależy mi na tym, abyś na naszych zajęciach czuł/a się dobrze. Dlatego
       dbam o dobrą atmosferę. Możesz liczyć na pełne wsparcie i zrozumienie.
       Zawsze wysłucham z jakimi problemamy na lekcjach się zmagasz i pomogę Ci
@@ -217,7 +203,7 @@
   </div>
 
   <div class="section">
-    <h2>Szczegóły</h2>
+    <h3>Szczegóły</h3>
     <p>Na ten moment możliwe są tylko zajęcia online . Prowadzę je używając
       wirtualnej tablicy i komunikatora Discord.</p>
     <p>Cena :</p>
@@ -233,7 +219,7 @@
   </div>
 
   <div class="section">
-    <h2>Dostępność</h2>
+    <h3>Dostępność</h3>
     <table class="table">
       <tr>
         <th>Dzień tygodnia</th>
@@ -271,7 +257,7 @@
   </div>
 
   <div class="section">
-    <h2>Opinie</h2>
+    <h3>Opinie</h3>
     <div class="reviews">
       <div class="review">
         <p>"Bardzo polecam! Profesjonalne podejście do nauki, zrozumienie i
