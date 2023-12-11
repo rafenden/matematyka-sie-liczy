@@ -81,11 +81,6 @@ header, footer {
   color: var(--white-text-color);
 }
 
-h3 {
-  font-size: var(--section-title-font-size);
-  font-weight: 700;
-}
-
 blockquote {
   border-left: 3px solid var(--accent-color);
   padding-left: 15px;
