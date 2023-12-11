@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/styles.css">
-  <title>{{ title }}</title>
+  <title>{{ title | safe }}</title>
 </head>
 <body>
 <header>
@@ -14,7 +14,7 @@
     <h2 class="intro">{{ intro | safe }}</h2>
     <ul class="contact">
       {% for details in contact_details %}
-      <li><a href="{{ details }}">{{ details.text }}</a></li>
+      <li><a href="{{ details.url | safe }}">{{ details.text | safe }}</a></li>
       {% endfor %}
     </ul>
   </div>
