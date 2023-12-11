@@ -117,4 +117,5 @@ table th, table td {
 table th {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  border-color: var(--accent-color);
 }
