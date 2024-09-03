@@ -98,7 +98,7 @@ h2 {
   font-size: var(--section-title-font-size);
 }
 
-strong {
+strong, th {
   font-weight: 500; 
 }
 
