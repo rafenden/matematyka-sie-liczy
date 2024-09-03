@@ -5,7 +5,7 @@
   --heading-text-color: #000000;
   --white-text-color: #ffffff;
   --header-link-color: #cffff4;
-  --font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+  --font-family: "Raleway", sans-serif;
   --default-font-size: 18px;
   --section-title-font-size: 26px;
   --intro-font-size: 20px;
@@ -16,6 +16,7 @@ body {
   font-family: var(--font-family);
   color: var(--text-color);
   font-size: var(--default-font-size);
+  font-weight: 200;
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
@@ -89,7 +90,7 @@ header, footer {
 
 h1, h2, h2, h4, h5, h6 {
   color: var(--heading-text-color);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h2 {
