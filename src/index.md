@@ -12,7 +12,7 @@ Zapraszam na zajęcia z nauczycielką, absolwentką Politechniki Wrocławskiej p
 
 Korepetycji udzielam od 14 lat, z czego 3 z nich pracowałam w szkole. Znam codzienne zmagania uczniów, problematyczne zagadnia z lekcji oraz wymagania nauczycieli.
 
-Zachęcam do przejrzenia opinii dostępnych na moim profilu, wystawionych przez uczniów i ich rodziców. [KLIK](https://profil.e-korepetycje.net/opinie)
+Zachęcam do przejrzenia opinii dostępnych na moim profilu, wystawionych przez uczniów i ich rodziców. [KLIK](https://www.e-korepetycje.net/malgorzata-swiatek/matematyka#opinie)
 
 ## Dla kogo prowadzę zajęcia?
 
