@@ -6,7 +6,7 @@ contact_details:
   - url: "mailto:kontakt@matematykasieliczy.pl"
     text: "kontakt@matematykasieliczy.pl"
 ---
-Zapraszam na zajęcia online z nauczycielką, absolwentką Politechniki Wrocławskiej po kierunku Matematyka Stosowana i Matematyki Nauczycielskiej Uniwersytetu Pedagogicznego w Krakowie.
+Zapraszam na zajęcia z nauczycielką, absolwentką Politechniki Wrocławskiej po kierunku Matematyka Stosowana i Matematyki Nauczycielskiej Uniwersytetu Pedagogicznego w Krakowie.
 
 ## Doświadczenie
 
