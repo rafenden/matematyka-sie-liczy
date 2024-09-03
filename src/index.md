@@ -6,13 +6,13 @@ contact_details:
   - url: "mailto:kontakt@matematykasieliczy.pl"
     text: "kontakt@matematykasieliczy.pl"
 ---
-Zapraszam na zajęcia online z nauczycielką, absolwentką Politechniki Wrocławskiej po kierunku Matematyka Stosowana  i Matematyki Nauczycielskiej Uniwersytetu Pedagogicznego w Krakowie.
+Zapraszam na zajęcia online z nauczycielką, absolwentką Politechniki Wrocławskiej po kierunku Matematyka Stosowana i Matematyki Nauczycielskiej Uniwersytetu Pedagogicznego w Krakowie.
 
 ## Doświadczenie
 
 Korepetycji udzielam od 14 lat, z czego 3 z nich pracowałam w szkole. Znam codzienne zmagania uczniów, problematyczne zagadnia z lekcji oraz wymagania nauczycieli.
 
-Zachęcam do przejrzenia opinii dostępnych na moim profilu, wystawionych przez uczniów i ich rodziców.
+Zachęcam do przejrzenia opinii dostępnych na moim profilu, wystawionych przez uczniów i ich rodziców. [KLIK](https://profil.e-korepetycje.net/opinie)
 
 ## Dla kogo prowadzę zajęcia?
 
@@ -55,7 +55,7 @@ W razie potrzeby przedłużam spotkanie tak, aby dokończyć omawiane zagadnieni
 
 ## Szczegóły
 
-Na ten moment możliwe są tylko zajęcia **online**. Prowadzę je używając wirtualnej tablicy i komunikatora Discord.
+Zajęcia stacjonarne odbywają się we Wrocławiu. Z kolei te online prowadzę używając wirtualnej tablicy i komunikatora ( do uzgodnienia).
 
 **Cena**:
 - 100 zł / 60 minut dla uczniów szkół podstawowych
@@ -84,6 +84,10 @@ Studenci – pomoc w rozwiązywaniu zadań (indywidualna wycena).
 
 > "Najlepsza nauczycielka matematyki, z jaką miałem do czynienia. Zawsze pomaga, tłumaczy i zadania stają się łatwiejsze."
 
-> "Bardzo dobra korepetycja. Dzięki Małgosi zrozumiałem matematykę. Polecam!"
+> "Super nauczycielka, wszystkie moje wątpliwości co do nowych tematów z matematyki tłumaczy pokazuje super sposoby i co najważniejsze uczy ! Z czego potem dostaje super stopnie"
+
+> "Bardzo miła atmosfera na zajęciach. Dzięki pani Małgosi byłam bardzo dobrze przygotowana do egzaminu ósmoklasisty oraz poszerzyłam swoją wiedzę. Gorąco polecam :))"
+
+
 
 Źródło: [e-korepetycje.net](https://www.e-korepetycje.net/malgorzata-swiatek/matematyka)
