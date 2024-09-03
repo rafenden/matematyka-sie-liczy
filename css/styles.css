@@ -96,7 +96,10 @@ h1, h2, h2, h4, h5, h6 {
 h2 {
   margin-top: 40px;
   font-size: var(--section-title-font-size);
+}
 
+strong {
+  font-weight: 500; 
 }
 
 blockquote {
