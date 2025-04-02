@@ -73,13 +73,8 @@ footer {
   margin-bottom: 30px;
   height: auto;
   width: 120px;
-  transition: var(--transition);
   display: inline-block;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-}
-
-.logo:hover {
-  transform: scale(1.02);
 }
 
 .title {
@@ -134,10 +129,9 @@ footer {
 }
 
 .contact a {
-  color: var(--header-link-color);
+  color: var(--white-text-color);
   text-decoration: none;
   font-size: var(--intro-font-size);
-  transition: var(--transition);
   padding: 8px 16px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -146,14 +140,9 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.contact a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.contact a:active, .contact a:focus {
-  opacity: 0.7;
+.contact a:active, .contact a:focus, .contact a:hover {
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .container {
