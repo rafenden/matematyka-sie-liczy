@@ -90,4 +90,4 @@ Studenci – pomoc w rozwiązywaniu zadań (indywidualna wycena).
 
 
 
-Źródło: [e-korepetycje.net](https://www.e-korepetycje.net/malgorzata-swiatek/matematyka)
+Źródło: [e-korepetycje.net](https://www.e-korepetycje.net/malgorzata-swiatek/matematyka#opinie)
