@@ -55,7 +55,7 @@ W razie potrzeby przedłużam spotkanie tak, aby dokończyć omawiane zagadnieni
 
 ## Szczegóły
 
-Zajęcia stacjonarne odbywają się we Wrocławiu. Z kolei te online prowadzę używając wirtualnej tablicy i komunikatora ( do uzgodnienia).
+Zajęcia stacjonarne odbywają się we Wrocławiu. Z kolei te online prowadzę używając wirtualnej tablicy i komunikatora (do uzgodnienia).
 
 ### Cennik
 
