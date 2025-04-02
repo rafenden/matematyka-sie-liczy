@@ -16,7 +16,7 @@
   --transition: all 0.2s ease-in-out;
 }
 
-body {
+html, body {
   font-family: var(--font-family);
   color: var(--text-color);
   font-size: var(--default-font-size);
@@ -27,6 +27,13 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 header {
@@ -36,6 +43,7 @@ header {
   text-align: center;
   padding: 40px 0;
   position: relative;
+  width: 100%;
 }
 
 footer {
@@ -54,6 +62,7 @@ footer {
   margin: 0 auto;
   padding: 32px;
   width: 90%;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -77,6 +86,14 @@ footer {
   font-weight: 700;
   margin: 0 0 20px 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 32px;
+  }
 }
 
 .contact {
@@ -98,6 +115,8 @@ footer {
   padding: 8px 16px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
 .contact a:hover {
@@ -163,12 +182,14 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 32px;
+  table-layout: fixed;
 }
 
 table th, table td {
   border: 1px solid #e2e8f0;
   padding: 12px;
   text-align: left;
+  word-wrap: break-word;
 }
 
 table th {
