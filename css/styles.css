@@ -108,9 +108,24 @@ footer {
   .title {
     font-size: 32px;
   }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
   .contact li {
     display: block;
     margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .contact a {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    font-size: 15px;
+    padding: 8px 12px;
   }
   .container {
     padding: 20px;
@@ -121,23 +136,27 @@ footer {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .contact li {
   display: inline-block;
   padding: 0 10px;
+  text-align: center;
 }
 
 .contact a {
   color: var(--white-text-color);
   text-decoration: none;
-  font-size: var(--intro-font-size);
+  font-size: 16px;
   padding: 8px 16px;
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.1);
   display: inline-block;
   margin-bottom: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-break: break-word;
+  text-align: center;
 }
 
 .contact a:active, .contact a:focus, .contact a:hover {
