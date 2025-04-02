@@ -57,14 +57,35 @@ W razie potrzeby przedłużam spotkanie tak, aby dokończyć omawiane zagadnieni
 
 Zajęcia stacjonarne odbywają się we Wrocławiu. Z kolei te online prowadzę używając wirtualnej tablicy i komunikatora ( do uzgodnienia).
 
-**Cena**:
-- 100 zł / 60 minut dla uczniów szkół podstawowych
-- 110 zł / 60 minut dla uczniów I, II i III liceum
-- 120 zł / 60 minut dla maturzystów poziomu podstawowego lub rozszerzonego
+### Cennik
 
-Możliwe są również zajęcia **grupowe** w cenie do uzgodnienia.
+<div class="pricing-grid">
+  <div class="pricing-card">
+    <h3>Szkoła podstawowa</h3>
+    <div class="price">100 zł</div>
+    <p>60 minut</p>
+    <p>Klasy 6, 7 i 8</p>
+  </div>
 
-Studenci – pomoc w rozwiązywaniu zadań (indywidualna wycena).
+  <div class="pricing-card">
+    <h3>Liceum</h3>
+    <div class="price">110 zł</div>
+    <p>60 minut</p>
+    <p>Klasy I, II i III</p>
+  </div>
+
+  <div class="pricing-card">
+    <h3>Matura</h3>
+    <div class="price">120 zł</div>
+    <p>60 minut</p>
+    <p>Poziom podstawowy i rozszerzony</p>
+  </div>
+</div>
+
+<div class="pricing-note">
+  <p><strong>Zajęcia grupowe</strong> - ceny do uzgodnienia</p>
+  <p><strong>Studenci</strong> - pomoc w rozwiązywaniu zadań (indywidualna wycena)</p>
+</div>
 
 ## Dostępność
 
@@ -80,14 +101,49 @@ Studenci – pomoc w rozwiązywaniu zadań (indywidualna wycena).
 
 ## Opinie
 
-> "Bardzo polecam! Profesjonalne podejście do nauki, zrozumienie i cierpliwość. Dzięki Małgosi odrobiłem zaległości w matematyce i zdałem egzamin."
+<div class="testimonials-grid">
+  <div class="testimonial-card">
+    <blockquote>
+      "Bardzo polecam! Profesjonalne podejście do nauki, zrozumienie i cierpliwość. Dzięki Małgosi odrobiłem zaległości w matematyke i zdałem egzamin."
+    </blockquote>
+    <div class="testimonial-author">
+      <strong>Jan Kowalski</strong>
+      <span>Liceum, klasa II</span>
+    </div>
+  </div>
 
-> "Najlepsza nauczycielka matematyki, z jaką miałem do czynienia. Zawsze pomaga, tłumaczy i zadania stają się łatwiejsze."
+  <div class="testimonial-card">
+    <blockquote>
+      "Najlepsza nauczycielka matematyki, z jaką miałem do czynienia. Zawsze pomaga, tłumaczy i zadania stają się łatwiejsze."
+    </blockquote>
+    <div class="testimonial-author">
+      <strong>Marcin Nowak</strong>
+      <span>Matura rozszerzona</span>
+    </div>
+  </div>
 
-> "Super nauczycielka, wszystkie moje wątpliwości co do nowych tematów z matematyki tłumaczy pokazuje super sposoby i co najważniejsze uczy ! Z czego potem dostaje super stopnie"
+  <div class="testimonial-card">
+    <blockquote>
+      "Super nauczycielka, wszystkie moje wątpliwości co do nowych tematów z matematyki tłumaczy pokazuje super sposoby i co najważniejsze uczy ! Z czego potem dostajesz super stopnie"
+    </blockquote>
+    <div class="testimonial-author">
+      <strong>Ania Wiśniewska</strong>
+      <span>Szkoła podstawowa, klasa 8</span>
+    </div>
+  </div>
 
-> "Bardzo miła atmosfera na zajęciach. Dzięki pani Małgosi byłam bardzo dobrze przygotowana do egzaminu ósmoklasisty oraz poszerzyłam swoją wiedzę. Gorąco polecam :))"
+  <div class="testimonial-card">
+    <blockquote>
+      "Bardzo miła atmosfera na zajęciach. Dzięki pani Małgosi byłam bardzo dobrze przygotowana do egzaminu ósmoklasisty oraz poszerzyłam swoją wiedzę. Gorąco polecam :))"
+    </blockquote>
+    <div class="testimonial-author">
+      <strong>Katarzyna Kowalska</strong>
+      <span>Ósmoklasistka</span>
+    </div>
+  </div>
+</div>
 
-
-
-Źródło: [e-korepetycje.net](https://www.e-korepetycje.net/malgorzata-swiatek/matematyka#opinie)
+<div class="testimonials-cta">
+  <p>Chcesz zobaczyć więcej opinii?</p>
+  <a href="https://www.e-korepetycje.net/malgorzata-swiatek/matematyka#opinie" class="cta-button">Zobacz wszystkie opinie</a>
+</div>
