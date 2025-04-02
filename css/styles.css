@@ -6,8 +6,11 @@
   --heading-text-color: #1a365d;
   --white-text-color: #ffffff;
   --header-link-color: rgba(255, 255, 255, 0.9);
-  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family: 'Raleway', system-ui, -apple-system, sans-serif;
   --default-font-size: 16px;
+  --h1-font-size: 44px;
+  --h2-font-size: 32px;
+  --h3-font-size: 24px;
   --section-title-font-size: 28px;
   --intro-font-size: 20px;
   --max-container-width: 1000px;
@@ -20,7 +23,7 @@ html, body {
   font-family: var(--font-family);
   color: var(--text-color);
   font-size: var(--default-font-size);
-  line-height: 1.6;
+  line-height: 1.8;
   font-weight: 400;
   background-color: var(--background-color);
   margin: 0;
@@ -30,6 +33,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -90,9 +94,31 @@ footer {
   max-width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .container, .header-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 38px;
+  }
+  .container {
+    padding: 24px;
+  }
+}
+
 @media (max-width: 767px) {
   .title {
     font-size: 32px;
+  }
+  .contact li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .container {
+    padding: 20px;
   }
 }
 
@@ -117,11 +143,13 @@ footer {
   background: rgba(255, 255, 255, 0.1);
   display: inline-block;
   margin-bottom: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact a:hover {
   background: rgba(255, 255, 255, 0.2);
-  transform: translateY(-1px);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .contact a:active, .contact a:focus {
@@ -186,7 +214,9 @@ table {
 }
 
 table th, table td {
-  border: 1px solid #e2e8f0;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  border-color: #e2e8f0;
   padding: 12px;
   text-align: left;
   word-wrap: break-word;
@@ -200,4 +230,81 @@ table th {
 
 li {
   padding: 5px;
+  margin-bottom: 8px;
+}
+
+/* Improved table styling */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* Pricing cards */
+.pricing-card {
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: var(--transition);
+  box-shadow: var(--box-shadow);
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card h3 {
+  color: var(--accent-color);
+  margin-top: 0;
+}
+
+.pricing-card .price {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(10px);
+  box-shadow: var(--box-shadow);
+  z-index: 100;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background-color: var(--accent-light);
+  transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.container {
+  animation: fadeIn 0.5s ease-in-out;
 }

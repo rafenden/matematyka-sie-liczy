@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Matematyka Się Liczy - Korepetycje z matematyki we Wrocławiu. Przygotowanie do egzaminów, nadrabianie zaległości, profesjonalne wsparcie.">
+  <meta name="keywords" content="matematyka, korepetycje, Wrocław, matura, egzamin ósmoklasisty">
+  <meta property="og:title" content="{{ title | safe }}">
+  <meta property="og:description" content="Profesjonalne korepetycje z matematyki we Wrocławiu i online">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://matematykasieliczy.pl">
+  <meta property="og:image" content="/images/logo.svg">
   <link rel="stylesheet" href="/css/styles.css">
   <title>{{ title | safe }}</title>
   <link rel="shortcut icon" type="image/svg+xml" href="/images/logo.svg" />
@@ -13,12 +20,12 @@
 <body>
 <header>
   <div class="header-container">
-    <img alt="Logo" class="logo" src="/images/logo.svg"/>
+    <img alt="Matematyka Się Liczy - Logo" class="logo" src="/images/logo.svg"/>
     <h1 class="title">{{ title | safe }}</h1>
     <h2 class="intro">{{ intro | safe }}</h2>
-    <ul class="contact">
+    <ul class="contact" aria-label="Informacje kontaktowe">
       {% for details in contact_details %}
-      <li><a href="{{ details.url | safe }}">{{ details.text | safe }}</a></li>
+      <li><a href="{{ details.url | safe }}" aria-label="{{ details.text | safe }}">{{ details.text | safe }}</a></li>
       {% endfor %}
     </ul>
   </div>
@@ -29,5 +36,31 @@
   </div>
 </main>
 <footer>&copy; {% year %} Matematyka Się Liczy</footer>
+<a href="#" class="back-to-top" aria-label="Przewiń do góry">↑</a>
+
+<script>
+  // Back to top button functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.querySelector('.back-to-top');
+    
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+      }
+    });
+    
+    // Smooth scroll to top when clicked
+    backToTopButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
 </body>
 </html>
