@@ -12,7 +12,7 @@ A modern website for a math tutor, built with Eleventy (11ty).
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone git@github.com:rafenden/matematyka-sie-liczy.git
 cd matematyka-sie-liczy
 ```
 
