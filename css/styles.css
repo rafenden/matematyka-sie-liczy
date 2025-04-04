@@ -392,32 +392,75 @@ table {
 /* Back to top button */
 .back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
   background-color: var(--accent-color);
-  color: var(--white-text-color);
-  width: 40px;
-  height: 40px;
+  color: white;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
   text-decoration: none;
   opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-  transform: translateY(10px);
-  box-shadow: var(--box-shadow);
-  z-index: 100;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .back-to-top.visible {
   opacity: 1;
-  transform: translateY(0);
+  visibility: visible;
 }
 
 .back-to-top:hover {
   background-color: var(--accent-light);
-  transform: translateY(-3px);
+}
+
+/* Lars section styling */
+.lars-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+.lars-text {
+  flex: 1;
+}
+
+.lars-image {
+  flex: 0 0 auto;
+  max-width: 350px;
+  order: -1; /* Places image on the left */
+}
+
+.dog-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+}
+
+.dog-image:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 767px) {
+  .lars-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .lars-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 /* Animations */

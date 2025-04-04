@@ -20,16 +20,16 @@ Prowadzę zajęcia dla młodzieży ze szkół podstawowych (tylko klasa 6, 7 i 8
 
 ## Co możemy razem osiągnąć?
 
-- Nadrobimy zaległości
-- Doszlifujemy Twoje umiejętności
-- Poszerzymy matematyczne horyzonty
-- Wyćwiczymy problematyczne zagadnienia i algorytmy rozwiązań
+- 📚 Nadrobimy zaległości
+- ✨ Doszlifujemy Twoje umiejętności
+- 🚀 Poszerzymy matematyczne horyzonty
+- 🧠 Wyćwiczymy problematyczne zagadnienia i algorytmy rozwiązań
 
 oraz
 
-- Opanujemy materiał do sprawdzianów i kartkówek
-- Przygotujemy Cię do egzaminu ósmoklasisty
-- Zdobędziesz pożądany wynik z egzaminu maturalnego na poziomie podstawowym lub rozszerzonym.
+- 📝 Opanujemy materiał do sprawdzianów i kartkówek
+- 🎯 Przygotujemy Cię do egzaminu ósmoklasisty
+- 🏆 Zdobędziesz pożądany wynik z egzaminu maturalnego na poziomie podstawowym lub rozszerzonym.
 
 ## To nie wszystko! Co ponadto?
 
@@ -44,6 +44,15 @@ Tłumaczę zadania, dobierając najlepszy dla Ciebie sposób. Pokazuję Cię ró
 Stawiam na zrozumienie, dbam o to, abyś nie zapomniał/a tego, czego już się nauczysz.
 
 Mam doświadczenie w układaniu i sprawdzaniu testów, prac semestralnych, sprawdzianów i kartkówek, więc jestem świadoma, na co zwrócić uwagę przy przygotowaniu Cię do nich.
+
+<div class="lars-section">
+  <div class="lars-text">
+    <p><strong>A jeśli matematyka nadal wydaje Ci się stresująca</strong> – poznaj Larsa, mojego uroczego Goldena Retrievera! Udowodniono naukowo, że głaskanie psa obniża poziom stresu o 37%, a Lars jest ekspertem w pocieszaniu podczas rozwiązywania najtrudniejszych równań.</p>
+  </div>
+  <div class="lars-image">
+    <img src="/images/lars.jpg" alt="Lars - Golden Retriever, matematyczny asystent"  title="Lars - Golden Retriever, matematyczny asystent" class="dog-image" />
+  </div>
+</div>
 
 ## Czego możesz spodziewać się na spotkaniach?
 
