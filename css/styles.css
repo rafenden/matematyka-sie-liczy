@@ -50,6 +50,15 @@ html, body {
   scroll-behavior: smooth;
 }
 
+ul {
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -452,65 +461,6 @@ li {
   color: var(--color-primary);
 }
 
-/* Pricing table - Markdown version */
-.pricing-table {
-  margin: 32px 0;
-  border-collapse: separate;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid #e2e8f0;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-}
-
-.pricing-table th,
-.pricing-table td {
-  background: var(--color-white);
-  padding: 16px;
-  text-align: center;
-  border: none;
-  vertical-align: middle;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
-}
-
-.pricing-table tr:first-child td {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  font-weight: 600;
-  font-size: 18px;
-  padding-top: 24px;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
-
-.pricing-table tr:nth-child(2) td {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--color-primary);
-  padding-top: 16px;
-  padding-bottom: 12px;
-}
-
-.pricing-table tr:last-child td {
-  padding-bottom: 24px;
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
-}
-
-.pricing-table td {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 767px) {
-  .pricing-table {
-    border-spacing: 0;
-    display: block;
-    overflow-x: auto;
-  }
-  
-  .pricing-table td {
-    min-width: 120px;
-  }
-}
 
 /* ==========================================================================
    TESTIMONIAL COMPONENTS
@@ -627,22 +577,42 @@ li {
    ========================================================================== */
 
 .lars {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
   margin: 30px 0;
   padding: 20px 0;
+  overflow: hidden; /* Zapobiega wychodzeniu elementów poza kontener */
+  clear: both; /* Zapewnia, że następne elementy nie będą wchodzić pod sekcję */
+  display: flex;
+  align-items: center;
+}
+
+.lars__image-wrapper {
+  flex: 0 0 auto;
+  max-width: 250px;
+  margin-right: 20px;
+}
+
+.lars__image-wrapper p {
+  margin: 0;
+}
+
+.lars__image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+}
+
+.lars__image-wrapper img:hover {
+  transform: scale(1.03);
 }
 
 .lars__content {
   flex: 1;
 }
 
-.lars__image-wrapper {
-  flex: 0 0 auto;
-  max-width: 350px;
-  order: -1; /* Places image on the left */
+.lars__content p {
+  margin: 0;
 }
 
 .lars__image {
@@ -658,37 +628,17 @@ li {
 }
 
 @media (max-width: 767px) {
-  .lars-section {
+  .lars {
     flex-direction: column;
     text-align: center;
   }
   
-  .lars-image {
-    max-width: 100%;
-    margin-bottom: 20px;
+  .lars__content {
+    text-align: center;
   }
-}
-
-/* ==========================================================================
-   IMAGES
-   ========================================================================== */
-
-.content-image {
-  max-width: 350px;
-  height: auto;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  transition: transform 0.3s ease;
-  display: block;
-  margin: 20px auto;
-}
-
-.content-image:hover {
-  transform: scale(1.03);
-}
-
-@media (max-width: 767px) {
-  .container img {
+  
+  .lars__image-wrapper {
+    margin: 0 auto 20px;
     max-width: 100%;
   }
 }

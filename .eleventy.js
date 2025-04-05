@@ -22,10 +22,12 @@ module.exports = function(eleventyConfig) {
     });
 
     // Dodanie paired shortcode dla sekcji z Larsem
-    eleventyConfig.addPairedShortcode("lars", function(content) {
+    eleventyConfig.addPairedShortcode("lars", function(content, imageAlt, smallImageSrc, largeImageSrc) {
         return `<div class="lars">
             <div class="lars__image-wrapper">
-                <img src="/images/lars.jpg" alt="Lars - Golden Retriever, matematyczny asystent" title="Lars - Golden Retriever, matematyczny asystent" class="lars__image" />
+                <a href="${largeImageSrc}" target="_blank" title="Otwórz większe zdjęcie w nowej karcie">
+                    <img src="${smallImageSrc}" alt="${imageAlt}" class="lars__image" />
+                </a>
             </div>
             <div class="lars__content">
                 ${content}
