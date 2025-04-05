@@ -624,11 +624,3 @@ table {
     max-width: 100%;
   }
 }
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Animation removed from container as requested */
