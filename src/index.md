@@ -20,16 +20,16 @@ Prowadzę zajęcia dla młodzieży ze szkół podstawowych (tylko klasa 6, 7 i 8
 
 ## Co możemy razem osiągnąć?
 
-- 📚 Nadrobimy zaległości
-- ✨ Doszlifujemy Twoje umiejętności
-- 🚀 Poszerzymy matematyczne horyzonty
-- 🧠 Wyćwiczymy problematyczne zagadnienia i algorytmy rozwiązań
+- Nadrobimy zaległości
+- Doszlifujemy Twoje umiejętności
+- Poszerzymy matematyczne horyzonty
+- Wyćwiczymy problematyczne zagadnienia i algorytmy rozwiązań
 
 oraz
 
-- 📝 Opanujemy materiał do sprawdzianów i kartkówek
-- 🎯 Przygotujemy Cię do egzaminu ósmoklasisty
-- 🏆 Zdobędziesz pożądany wynik z egzaminu maturalnego na poziomie podstawowym lub rozszerzonym.
+- Opanujemy materiał do sprawdzianów i kartkówek
+- Przygotujemy Cię do egzaminu ósmoklasisty
+- Zdobędziesz pożądany wynik z egzaminu maturalnego na poziomie podstawowym lub rozszerzonym.
 
 ## To nie wszystko! Co ponadto?
 
@@ -45,22 +45,17 @@ Stawiam na zrozumienie, dbam o to, abyś nie zapomniał/a tego, czego już się 
 
 Mam doświadczenie w układaniu i sprawdzaniu testów, prac semestralnych, sprawdzianów i kartkówek, więc jestem świadoma, na co zwrócić uwagę przy przygotowaniu Cię do nich.
 
-<div class="lars-section">
-  <div class="lars-text">
-    <p><strong>A jeśli matematyka nadal wydaje Ci się stresująca</strong> – poznaj Larsa, mojego uroczego Goldena Retrievera! Udowodniono naukowo, że głaskanie psa obniża poziom stresu o 37%, a Lars jest ekspertem w pocieszaniu podczas rozwiązywania najtrudniejszych równań.</p>
-  </div>
-  <div class="lars-image">
-    <img src="/images/lars.jpg" alt="Lars - Golden Retriever, matematyczny asystent"  title="Lars - Golden Retriever, matematyczny asystent" class="dog-image" />
-  </div>
-</div>
+{% lars %}
+**A jeśli matematyka nadal wydaje Ci się stresując** – poznaj Larsa, mojego uroczego Goldena Retrievera! Udowodniono naukowo, że głaskanie psa obniża poziom stresu o 37%, a Lars jest ekspertem w pocieszaniu podczas rozwiązywania najtrudniejszych równań.
+{% endlars %}
 
 ## Czego możesz spodziewać się na spotkaniach?
 
-Zależy mi na tym,  abyś na naszych zajęciach czuł/a się dobrze. Dlatego dbam o dobrą atmosferę. Możesz liczyć na pełne wsparcie i zrozumienie. Zawsze wysłucham z jakimi problemamy na lekcjach się zmagasz i pomogę Ci je przezwyciężyć.
-
-Chętnie wesprę Cię również poza zajęciami. Oznacza to, że możesz liczyć na krótkie konsultacje przez e-mail czy SMS w sytuacjach awaryjnych :)
-
-W razie potrzeby przedłużam spotkanie tak, aby dokończyć omawiane zagadnienie, czy zadanie.
+- Zależy mi na tym, abyś na naszych zajęciach czuł/a się dobrze. Dlatego dbam o dobrą atmosferę.
+- Możesz liczyć na pełne wsparcie i zrozumienie.
+- Zawsze wysłucham z jakimi problemamy na lekcjach się zmagasz i pomogę Ci je przezwyciężyć.
+- Chętnie wesprę Cię również poza zajęciami - możesz liczyć na krótkie konsultacje przez e-mail czy SMS w sytuacjach awaryjnych.
+- W razie potrzeby przedłużam spotkanie tak, aby dokończyć omawiane zagadnienie czy zadanie.
 
 ## Szczegóły
 
@@ -68,33 +63,15 @@ Zajęcia stacjonarne odbywają się we Wrocławiu. Z kolei te online prowadzę u
 
 ### Cennik
 
-<div class="pricing-grid">
-  <div class="pricing-card">
-    <h3>Szkoła podstawowa</h3>
-    <div class="price">100 zł</div>
-    <p>60 minut</p>
-    <p>Klasy 6, 7 i 8</p>
-  </div>
+{% prices %}
+{% price "Szkoła podstawowa", "100 zł", "60 minut", "Klasy 6, 7 i 8" %}
+{% price "Liceum", "110 zł", "60 minut", "Klasy I, II i III" %}
+{% price "Matura", "120 zł", "60 minut", "Poziom podstawowy i rozszerzony" %}
+{% endprices %}
 
-  <div class="pricing-card">
-    <h3>Liceum</h3>
-    <div class="price">110 zł</div>
-    <p>60 minut</p>
-    <p>Klasy I, II i III</p>
-  </div>
+**Zajęcia grupowe** - ceny do uzgodnienia
 
-  <div class="pricing-card">
-    <h3>Matura</h3>
-    <div class="price">120 zł</div>
-    <p>60 minut</p>
-    <p>Poziom podstawowy i rozszerzony</p>
-  </div>
-</div>
-
-<div class="pricing-note">
-  <p><strong>Zajęcia grupowe</strong> - ceny do uzgodnienia</p>
-  <p><strong>Studenci</strong> - pomoc w rozwiązywaniu zadań (indywidualna wycena)</p>
-</div>
+**Studenci** - pomoc w rozwiązywaniu zadań (indywidualna wycena)
 
 ## Dostępność
 
@@ -110,49 +87,14 @@ Zajęcia stacjonarne odbywają się we Wrocławiu. Z kolei te online prowadzę u
 
 ## Opinie
 
-<div class="testimonials-grid">
-  <div class="testimonial-card">
-    <blockquote>
-      "Bardzo polecam! Profesjonalne podejście do nauki, zrozumienie i cierpliwość. Dzięki Małgosi odrobiłem zaległości w matematyke i zdałem egzamin."
-    </blockquote>
-    <div class="testimonial-author">
-      <strong>Jan Kowalski</strong>
-      <span>Liceum, klasa II</span>
-    </div>
-  </div>
+{% testimonials %}
+{% testimonial "Bardzo dobra korepetytorka, pomagała mi w nauce od końca szkoły podstawowej do zakończenia nauki w liceum. Pomogła zrozumieć matematykę i zachęcić do niej. Polecam", "Norbert", "Szkoła podstawowa oraz liceum" %}
 
-  <div class="testimonial-card">
-    <blockquote>
-      "Najlepsza nauczycielka matematyki, z jaką miałem do czynienia. Zawsze pomaga, tłumaczy i zadania stają się łatwiejsze."
-    </blockquote>
-    <div class="testimonial-author">
-      <strong>Marcin Nowak</strong>
-      <span>Matura rozszerzona</span>
-    </div>
-  </div>
+{% testimonial "Bardzo miła atmosfera na zajęciach. Dzięki pani Małgosi byłam bardzo dobrze przygotowana do egzaminu ósmoklasisty oraz poszerzyłam swoją wiedzę. Gorąco polecam :))", "Paulina", "Szkoła podstawowa" %}
 
-  <div class="testimonial-card">
-    <blockquote>
-      "Super nauczycielka, wszystkie moje wątpliwości co do nowych tematów z matematyki tłumaczy pokazuje super sposoby i co najważniejsze uczy ! Z czego potem dostajesz super stopnie"
-    </blockquote>
-    <div class="testimonial-author">
-      <strong>Ania Wiśniewska</strong>
-      <span>Szkoła podstawowa, klasa 8</span>
-    </div>
-  </div>
+{% testimonial "Lekcje z Panią Małgosią przygotowały mnie do egzaminu ósmoklasisty. Dzięki tym zajęciom nauczyłam się wielu przydatnych rzeczy do egzaminu oraz liceum.", "Kalina", "Liceum" %}
 
-  <div class="testimonial-card">
-    <blockquote>
-      "Bardzo miła atmosfera na zajęciach. Dzięki pani Małgosi byłam bardzo dobrze przygotowana do egzaminu ósmoklasisty oraz poszerzyłam swoją wiedzę. Gorąco polecam :))"
-    </blockquote>
-    <div class="testimonial-author">
-      <strong>Katarzyna Kowalska</strong>
-      <span>Ósmoklasistka</span>
-    </div>
-  </div>
-</div>
+{% testimonial "Pani Małgosia nie tylko pomogła mi przygotować się do matury, ale także do egzaminów poprawkowych. Gorąco polecam wszystkim którzy chcą zrozumieć i polubić matematykę jako przedmiot.", "Przemek", "Liceum" %}
+{% endtestimonials %}
 
-<div class="testimonials-cta">
-  <p>Chcesz zobaczyć więcej opinii?</p>
-  <a href="https://www.e-korepetycje.net/malgorzata-swiatek/matematyka#opinie" class="cta-button">Zobacz wszystkie opinie</a>
-</div>
+{% testimonialsCta "Chcesz zobaczyć więcej opinii?", "Zobacz wszystkie opinie", "https://www.e-korepetycje.net/malgorzata-swiatek/matematyka#opinie" %}
