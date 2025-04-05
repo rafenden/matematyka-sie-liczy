@@ -1,4 +1,22 @@
+const fs = require('fs');
+const path = require('path');
+
 module.exports = function(eleventyConfig) {
+    // Add cache busting filter
+    eleventyConfig.addFilter("cacheBust", function(url) {
+        const [urlPath, urlQuery] = url.split('?');
+        const filePath = path.join(__dirname, urlPath.substring(1)); // Remove leading slash
+        
+        try {
+            const stats = fs.statSync(filePath);
+            const timestamp = stats.mtime.getTime();
+            return `${urlPath}?v=${timestamp}${urlQuery ? '&' + urlQuery : ''}`;
+        } catch (e) {
+            console.log('Cache busting error for', url, e);
+            return url;
+        }
+    });
+
     // Copy `css/` to `_site/css/`
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("images");
