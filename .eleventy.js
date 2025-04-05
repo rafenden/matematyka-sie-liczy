@@ -14,20 +14,20 @@ module.exports = function(eleventyConfig) {
     // Dodanie shortcode dla cennika z pozycyjnymi parametrami
     eleventyConfig.addShortcode("price", function(title, price, duration, description) {
         return `<div class="pricing-card card">
-            <h3>${title}</h3>
-            <div class="price">${price}</div>
-            <p>${duration}</p>
-            <p>${description}</p>
+            <h3 class="pricing-card__title">${title}</h3>
+            <div class="pricing-card__price">${price}</div>
+            <p class="pricing-card__description">${duration}</p>
+            <p class="pricing-card__description">${description}</p>
         </div>`;
     });
 
     // Dodanie paired shortcode dla sekcji z Larsem
     eleventyConfig.addPairedShortcode("lars", function(content) {
-        return `<div class="lars-section">
-            <div class="lars-image">
-                <img src="/images/lars.jpg" alt="Lars - Golden Retriever, matematyczny asystent" title="Lars - Golden Retriever, matematyczny asystent" class="dog-image" />
+        return `<div class="lars">
+            <div class="lars__image-wrapper">
+                <img src="/images/lars.jpg" alt="Lars - Golden Retriever, matematyczny asystent" title="Lars - Golden Retriever, matematyczny asystent" class="lars__image" />
             </div>
-            <div class="lars-text">
+            <div class="lars__content">
                 ${content}
             </div>
         </div>`;
@@ -36,10 +36,10 @@ module.exports = function(eleventyConfig) {
     // Dodanie shortcode dla pojedynczej opinii z pozycyjnymi parametrami
     eleventyConfig.addShortcode("testimonial", function(quote, author, description) {
         return `<div class="testimonial card">
-            <blockquote>"${quote}"</blockquote>
-            <div class="author">
-                <strong>${author}</strong>
-                <em>${description}</em>
+            <blockquote class="testimonial__quote">"${quote}"</blockquote>
+            <div class="testimonial__author">
+                <strong class="testimonial__author-name">${author}</strong>
+                <em class="testimonial__author-info">${description}</em>
             </div>
         </div>`;
     });
@@ -52,8 +52,8 @@ module.exports = function(eleventyConfig) {
     // Dodanie shortcode dla przycisku CTA pod opiniami
     eleventyConfig.addShortcode("testimonialsCta", function(text, linkText, url) {
         return `<div class="testimonials-cta">
-            <h3>${text}</h3>
-            <a href="${url}" class="cta-button">${linkText}</a>
+            <h3 class="testimonials-cta__title">${text}</h3>
+            <a href="${url}" class="button">${linkText}</a>
         </div>`;
     });
 

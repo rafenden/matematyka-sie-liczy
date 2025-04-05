@@ -1,31 +1,45 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
 :root {
-  --accent-color: #387a6e;
-  --accent-light: #4a9c8d;
-  --background-color: #f8f9fa;
-  --text-color: #2c3e50;
-  --heading-text-color: #1a365d;
-  --white-text-color: #ffffff;
-  --header-link-color: rgba(255, 255, 255, 0.9);
-  --font-family: 'Raleway', system-ui, -apple-system, sans-serif;
-  --default-font-size: 16px;
-  --h1-font-size: 44px;
-  --h2-font-size: 32px;
-  --h3-font-size: 24px;
-  --section-title-font-size: 28px;
-  --intro-font-size: 20px;
-  --max-container-width: 1000px;
+  /* Colors */
+  --color-primary: #387a6e;
+  --color-primary-light: #4a9c8d;
+  --color-background: #f8f9fa;
+  --color-text: #2c3e50;
+  --color-heading: #1a365d;
+  --color-white: #ffffff;
+  
+  /* Typography */
+  --font-family-base: 'Raleway', system-ui, -apple-system, sans-serif;
+  --font-size-base: 16px;
+  --font-size-h1: 44px;
+  --font-size-h2: 32px;
+  --font-size-h3: 24px;
+  --font-size-section-title: 28px;
+  --font-size-intro: 20px;
+  
+  /* Layout */
+  --width-container-max: 1000px;
+  
+  /* UI Elements */
   --border-radius: 8px;
   --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --transition: all 0.2s ease-in-out;
+  --transition-default: all 0.2s ease-in-out;
 }
 
+/* ==========================================================================
+   BASE ELEMENTS
+   ========================================================================== */
+
 html, body {
-  font-family: var(--font-family);
-  color: var(--text-color);
-  font-size: var(--default-font-size);
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
   line-height: 1.8;
   font-weight: 400;
-  background-color: var(--background-color);
+  background-color: var(--color-background);
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -40,20 +54,26 @@ html, body {
   box-sizing: inherit;
 }
 
-header {
-  background-color: var(--accent-color);
-  background-image: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-light) 100%);
-  color: var(--white-text-color);
+/* ==========================================================================
+   LAYOUT COMPONENTS
+   ========================================================================== */
+
+/* Header */
+.site-header {
+  background-color: var(--color-primary);
+  background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: var(--color-white);
   text-align: center;
   padding: 40px 0;
   position: relative;
   width: 100%;
 }
 
-footer {
-  background-color: var(--accent-color);
-  background-image: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-light) 100%);
-  color: var(--white-text-color);
+/* Footer */
+.site-footer {
+  background-color: var(--color-primary);
+  background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: var(--color-white);
   text-align: center;
   padding: 80px 0 40px;
   position: relative;
@@ -61,15 +81,32 @@ footer {
   z-index: 1;
 }
 
-.header-container, .container {
-  max-width: var(--max-container-width);
+/* Container */
+.container {
+  max-width: var(--width-container-max);
+  margin: -40px auto -40px;
+  padding: 32px;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  position: relative;
+  z-index: 2;
+  padding-bottom: 48px;
+}
+
+.site-header__container {
+  max-width: var(--width-container-max);
   margin: 0 auto;
   padding: 32px;
   width: 90%;
   box-sizing: border-box;
 }
 
-.logo {
+/* Site branding */
+.site-logo {
   margin-bottom: 30px;
   height: auto;
   width: 120px;
@@ -77,11 +114,11 @@ footer {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-.title {
-  color: var(--white-text-color);
+.site-title {
+  color: var(--color-white);
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: 44px;
+  font-size: var(--font-size-h1);
   font-weight: 700;
   margin: 0 0 20px 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -151,23 +188,24 @@ footer {
   }
 }
 
-.contact {
+/* Contact information */
+.contact-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.contact li {
+.contact-list__item {
   display: inline-block;
   padding: 0 10px;
   text-align: center;
 }
 
-.contact a {
-  color: var(--white-text-color);
+.contact-list__link {
+  color: var(--color-white);
   text-decoration: none;
-  font-size: 16px;
+  font-size: var(--font-size-base);
   padding: 8px 16px;
   border-radius: var(--border-radius);
   background: rgba(255, 255, 255, 0.1);
@@ -176,47 +214,51 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   word-break: break-word;
   text-align: center;
+  transition: var(--transition-default);
 }
 
-.contact a:active, .contact a:focus, .contact a:hover {
+.contact-list__link:active,
+.contact-list__link:focus,
+.contact-list__link:hover {
   opacity: 0.9;
   background: rgba(255, 255, 255, 0.15);
 }
 
-.container {
-  text-align: left;
-  background-color: var(--white-text-color);
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
-  margin-top: -40px;
-  margin-bottom: -40px;
-  position: relative;
-  z-index: 2;
-  padding-bottom: 48px;
-}
-
-.intro {
+/* Site subtitle */
+.site-subtitle {
   text-transform: uppercase;
   font-weight: 500;
-  font-size: var(--intro-font-size);
+  font-size: var(--font-size-intro);
   letter-spacing: 2px;
   margin-top: 16px;
-  color: var(--white-text-color);
+  color: var(--color-white);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   display: inline-block;
 }
 
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
 h1, h2, h3, h4, h5, h6 {
-  color: var(--heading-text-color);
+  color: var(--color-heading);
   font-weight: 600;
   line-height: 1.3;
   margin-top: 1.5em;
   margin-bottom: 0.75em;
 }
 
+h1 {
+  font-size: var(--font-size-h1);
+}
+
 h2 {
   margin-top: 40px;
-  font-size: var(--section-title-font-size);
+  font-size: var(--font-size-section-title);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
 }
 
 strong, th {
@@ -230,18 +272,27 @@ blockquote {
 
 blockquote p {
   font-style: italic;
-  font-size: var(--default-font-size);
+  font-size: var(--font-size-base);
   color: #555;
 }
 
+/* ==========================================================================
+   TABLE COMPONENTS
+   ========================================================================== */
+
 table {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 32px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin: 32px 0;
   table-layout: fixed;
 }
 
-table th, table td {
+table th,
+table td {
   border-style: solid;
   border-width: 0 1px 1px 0;
   border-color: #e2e8f0;
@@ -251,25 +302,14 @@ table th, table td {
 }
 
 table th {
-  background-color: var(--accent-color);
-  color: var(--white-text-color);
-  border-color: var(--accent-color);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
 }
 
 li {
   padding: 5px;
   margin-bottom: 8px;
-}
-
-/* Improved table styling */
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  border: 1px solid #e2e8f0;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  margin: 32px 0;
-  width: 100%;
 }
 
 /* Cennik - special styling for the pricing table */
@@ -287,12 +327,12 @@ table {
   padding: 16px;
   text-align: center;
   border: none;
-  background-color: var(--white-text-color);
+  background-color: var(--color-white);
 }
 
 .container h3 + table tr:first-child td {
-  background-color: var(--accent-color);
-  color: var(--white-text-color);
+  background-color: var(--color-primary);
+  color: var(--color-white);
   font-weight: 600;
   font-size: 18px;
   padding-top: 20px;
@@ -302,7 +342,7 @@ table {
 .container h3 + table tr:nth-child(2) td {
   font-size: 20px;
   font-weight: 700;
-  color: var(--accent-color);
+  color: var(--color-primary);
   padding-top: 16px;
   padding-bottom: 12px;
 }
@@ -348,13 +388,17 @@ table {
   }
 }
 
-/* Reusable card component */
+/* ==========================================================================
+   CARD COMPONENT
+   ========================================================================== */
+
 .card {
-  background: var(--white-text-color);
+  background: var(--color-white);
   padding: 24px;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  transition: var(--transition);
+  transition: var(--transition-default);
+  margin-bottom: 16px;
 }
 
 .card:hover {
@@ -362,7 +406,10 @@ table {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Pricing cards - Original HTML version */
+/* ==========================================================================
+   PRICING COMPONENTS
+   ========================================================================== */
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -370,25 +417,23 @@ table {
   margin: 32px 0;
 }
 
-.pricing-card {
-  padding: 24px;
-}
+/* Pricing card specific styles - używa wspólnej klasy card */
 
-.pricing-card h3 {
-  color: var(--accent-color);
+.pricing-card__title {
+  color: var(--color-primary);
   margin: 0 0 16px 0;
   font-size: 20px;
 }
 
-.pricing-card .price {
+.pricing-card__price {
   font-size: 24px;
   font-weight: 600;
-  color: var(--accent-color);
+  color: var(--color-primary);
   margin: 16px 0;
 }
 
-.pricing-card p {
-  color: var(--text-color);
+.pricing-card__description {
+  color: var(--color-text);
   margin: 8px 0;
 }
 
@@ -399,47 +444,50 @@ table {
   border-radius: var(--border-radius);
 }
 
-.pricing-note p {
+.pricing-note__text {
   margin: 8px 0;
 }
 
-.pricing-note strong {
-  color: var(--accent-color);
+.pricing-note__highlight {
+  color: var(--color-primary);
 }
 
 /* Pricing table - Markdown version */
 .pricing-table {
   margin: 32px 0;
   border-collapse: separate;
-  border-spacing: 24px 0;
+  border-spacing: 0;
   width: 100%;
-  box-shadow: none;
-  border: none;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 
 .pricing-table th,
 .pricing-table td {
-  background: var(--white-text-color);
+  background: var(--color-white);
   padding: 16px;
   text-align: center;
   border: none;
   vertical-align: middle;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
 }
 
 .pricing-table tr:first-child td {
-  background: var(--accent-color);
-  color: var(--white-text-color);
-  font-size: 20px;
-  font-weight: 500;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 18px;
   padding-top: 24px;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .pricing-table tr:nth-child(2) td {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--accent-color);
-  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+  padding-top: 16px;
   padding-bottom: 12px;
 }
 
@@ -464,7 +512,10 @@ table {
   }
 }
 
-/* Testimonials */
+/* ==========================================================================
+   TESTIMONIAL COMPONENTS
+   ========================================================================== */
+
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -474,32 +525,32 @@ table {
 
 .testimonial {
   text-align: left;
-  padding: 32px;
 }
 
-.testimonial blockquote {
+.testimonial__quote {
   font-style: italic;
   margin: 0 0 20px 0;
   padding: 0;
   font-size: 18px;
   line-height: 1.6;
-  color: var(--text-color);
+  color: var(--color-text);
 }
 
-.author {
+.testimonial__author {
   margin-top: 24px;
 }
 
-.author strong {
-  color: var(--accent-color);
+.testimonial__author-name {
+  color: var(--color-primary);
   display: block;
   font-style: normal;
   font-size: 18px;
   margin-bottom: 4px;
+  font-weight: 500;
 }
 
-.author em {
-  color: var(--text-color);
+.testimonial__author-info {
+  color: var(--color-text);
   font-style: normal;
   font-size: 14px;
   opacity: 0.8;
@@ -511,24 +562,35 @@ table {
   text-align: center;
 }
 
-.cta-button {
+.testimonials-cta__title {
+  margin-bottom: 24px;
+  color: var(--color-text);
+  font-size: var(--font-size-h3);
+  font-weight: 500;
+}
+
+.testimonials-cta .button {
   display: inline-block;
-  padding: 12px 24px;
-  background: var(--accent-color);
-  color: var(--white-text-color);
+  padding: 8px 16px;
+  background: var(--color-primary);
+  color: var(--color-white);
   text-decoration: none;
   border-radius: var(--border-radius);
-  transition: var(--transition);
-  font-size: 16px;
+  transition: var(--transition-default);
+  font-size: 18px;
   font-weight: 500;
   box-shadow: var(--box-shadow);
 }
 
-.cta-button:hover {
-  background: var(--accent-light);
+.testimonials-cta .button:hover {
+  background: var(--color-primary-light);
   transform: translateY(-3px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
+
+/* ==========================================================================
+   UTILITY COMPONENTS
+   ========================================================================== */
 
 /* Back to top button */
 .back-to-top {
@@ -537,7 +599,7 @@ table {
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: var(--accent-color);
+  background-color: var(--color-primary);
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -551,17 +613,20 @@ table {
   z-index: 1000;
 }
 
-.back-to-top.visible {
+.back-to-top--visible {
   opacity: 1;
   visibility: visible;
 }
 
 .back-to-top:hover {
-  background-color: var(--accent-light);
+  background-color: var(--color-primary-light);
 }
 
-/* Lars section styling */
-.lars-section {
+/* ==========================================================================
+   LARS SECTION
+   ========================================================================== */
+
+.lars {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -570,17 +635,17 @@ table {
   padding: 20px 0;
 }
 
-.lars-text {
+.lars__content {
   flex: 1;
 }
 
-.lars-image {
+.lars__image-wrapper {
   flex: 0 0 auto;
   max-width: 350px;
   order: -1; /* Places image on the left */
 }
 
-.dog-image {
+.lars__image {
   width: 100%;
   height: auto;
   border-radius: var(--border-radius);
@@ -588,7 +653,7 @@ table {
   transition: transform 0.3s ease;
 }
 
-.dog-image:hover {
+.lars__image:hover {
   transform: scale(1.03);
 }
 
@@ -604,8 +669,11 @@ table {
   }
 }
 
-/* Markdown image styling */
-.container img {
+/* ==========================================================================
+   IMAGES
+   ========================================================================== */
+
+.content-image {
   max-width: 350px;
   height: auto;
   border-radius: var(--border-radius);
@@ -615,7 +683,7 @@ table {
   margin: 20px auto;
 }
 
-.container img:hover {
+.content-image:hover {
   transform: scale(1.03);
 }
 

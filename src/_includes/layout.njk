@@ -18,14 +18,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-  <div class="header-container">
-    <img alt="Matematyka Się Liczy - Logo" class="logo" src="/images/logo.svg"/>
-    <h1 class="title">{{ title | safe }}</h1>
-    <h2 class="intro">{{ intro | safe }}</h2>
-    <ul class="contact" aria-label="Informacje kontaktowe">
+<header class="site-header">
+  <div class="site-header__container">
+    <img alt="Matematyka Się Liczy - Logo" class="site-logo" src="/images/logo.svg"/>
+    <h1 class="site-title">{{ title | safe }}</h1>
+    <h2 class="site-subtitle">{{ intro | safe }}</h2>
+    <ul class="contact-list" aria-label="Informacje kontaktowe">
       {% for details in contact_details %}
-      <li><a href="{{ details.url | safe }}" aria-label="{{ details.text | safe }}">{{ details.text | safe }}</a></li>
+      <li class="contact-list__item"><a href="{{ details.url | safe }}" aria-label="{{ details.text | safe }}" class="contact-list__link">{{ details.text | safe }}</a></li>
       {% endfor %}
     </ul>
   </div>
@@ -35,7 +35,7 @@
     {{ content | safe }}
   </div>
 </main>
-<footer>&copy; {% year %} Matematyka Się Liczy</footer>
+<footer class="site-footer">&copy; {% year %} Matematyka Się Liczy</footer>
 <a href="#" class="back-to-top" aria-label="Przewiń do góry">↑</a>
 
 <script>
@@ -46,9 +46,9 @@
     // Show/hide button based on scroll position
     window.addEventListener('scroll', function() {
       if (window.pageYOffset > 300) {
-        backToTopButton.classList.add('visible');
+        backToTopButton.classList.add('back-to-top--visible');
       } else {
-        backToTopButton.classList.remove('visible');
+        backToTopButton.classList.remove('back-to-top--visible');
       }
     });
     
