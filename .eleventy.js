@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("cacheBust", function(url) {
         const [urlPath, urlQuery] = url.split('?');
         const filePath = path.join(__dirname, urlPath.substring(1)); // Remove leading slash
-        
+
         try {
             const stats = fs.statSync(filePath);
             const timestamp = stats.mtime.getTime();
@@ -17,11 +17,10 @@ module.exports = function(eleventyConfig) {
         }
     });
 
-    // Copy `css/` to `_site/css/`
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("images");
-    
-    // Add shortcode for current year
+    eleventyConfig.addPassthroughCopy("js");
+
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
     // Dodanie paired shortcode dla sekcji cennika
@@ -43,7 +42,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPairedShortcode("lars", function(content, imageAlt, smallImageSrc, largeImageSrc) {
         return `<div class="lars">
             <div class="lars__image-wrapper">
-                <a href="${largeImageSrc}" target="_blank" title="Otwórz większe zdjęcie w nowej karcie">
+                <a href="${largeImageSrc}" data-modal-image="${largeImageSrc}" data-modal-alt="${imageAlt}" title="Otwórz większe zdjęcie w oknie popup (kliknij zdjęcie, aby zamknąć)">
                     <img src="${smallImageSrc}" alt="${imageAlt}" class="lars__image" />
                 </a>
             </div>
@@ -68,7 +67,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPairedShortcode("testimonials", function(content) {
         return `<div class="testimonials-grid">${content}</div>`;
     });
-    
+
     // Dodanie shortcode dla przycisku CTA pod opiniami
     eleventyConfig.addShortcode("testimonialsCta", function(text, linkText, url) {
         return `<div class="testimonials-cta">
